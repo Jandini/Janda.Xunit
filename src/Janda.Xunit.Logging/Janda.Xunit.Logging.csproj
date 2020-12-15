@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>Matt Janda</Authors>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -14,6 +15,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="Janda.Dot.Service" Version="0.3.0" />
     <PackageReference Include="Janda.Dot.Nuget" Version="0.3.0">
       <PrivateAssets>all</PrivateAssets>
